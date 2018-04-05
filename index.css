@@ -1,5 +1,6 @@
 .purple {
   /* TODO: Add some style definitions for the purple class in here... */
+  color: purple;
 }
 
 /* #answer-display will have black text on a white background.
@@ -8,6 +9,13 @@
   background-color: #000;
 }
 
+
 #answer-display:hover {
   color: #fff;
 }
+
+
+/*
+body{
+  background-image: url("yes.jpg");
+}*/

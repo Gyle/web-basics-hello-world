@@ -8,7 +8,7 @@ $(function() {
   // console.log will log a message or object to the browser developer console
   console.log("page loaded...");
 
-  $("selector-goes-here").click(/* function for when the button is clicked goes here */);
+  $("button").click(printOhHi);
   /*
    * TODO: You will need to use a css selector to get jQuery to find the button element in the page
    * Then you will need to make a new javascript function to do stuff for when the button
@@ -16,6 +16,19 @@ $(function() {
    * The function should call one of the functions below, and pass the other in as the callback...
    */
 });
+
+function printOhHi(){
+  $("#results-area").text("oh hi shaq");
+  displayQuestionAndAnswer("is ishaq gay","maybe");
+  $("body").backgroundImage = "url("yes.jpg")";
+}
+
+function drawYes(){
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img, 0, 0);
+}
 
 function displayQuestionAndAnswer(question, answer) {
   $("#results-area").text("True or false?");
